@@ -1,0 +1,170 @@
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ }
+
+.main {
+  position: sticky;
+  margin-top: 10vh;
+  width: 100vw;
+  height: 90vh;
+ background-image: url(../public/restorent.jpg);
+ 
+}
+.titleVdo { 
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  z-index: 10;
+}
+.Left {
+  display: flex;
+  width: 50%;
+}
+.Left h3 {
+  margin-left:30px ;
+}
+.right {
+ 
+  width: 50%;
+}  
+.right ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+} 
+.right ul li {
+ display: flex;
+ text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+}
+nav img {
+  width: 150px;
+  height: 10vh;
+  
+} 
+.li {
+ display: flex;
+ text-decoration: none;
+ color: white;
+}
+
+.content h2 {
+  color: white;
+}
+.content h2 span {
+  color: yellow;
+}
+.content button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(18, 40, 207);
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+
+.content {
+ position: relative;
+ top: 20vh;
+ left: 10vw;
+}
+
+/* footer css - :  */
+
+.footer {
+  width: 100vw;
+  height: 70vh;
+  
+ 
+} 
+.dish-content {
+  margin-top:10vh ;
+  background-color: green;
+}
+
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 50px;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(27, 29, 29);
+  font-size: large;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height:65%;
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+   width: 250px;
+   height: 320px;
+   /* background-color: aqua; */
+   
+} 
+.container div h3 {
+ margin: 0;
+}
+.container div ul li {
+  display: flex;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 0;
+}
+.container div ul {
+  margin-top: 0;
+  margin-left: 0;
+}
+ .social-link  a i {
+     color: rgb(255, 255, 255);
+     margin-left: 10px;
+ }
+ .social-link {
+  display: flex;
+  
+ } 
+ .policy {
+  
+  width: 100%;
+  height: 15%;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding: 10px;
+ }
+ .policy p {
+  margin: 0;
+  font-size: 15px;
+ }
+
