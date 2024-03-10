@@ -4,8 +4,10 @@ function singup() {
   return (
     <>
      <>
-      Singup sectionimport '../App.css';
-     </>
+    <div id='content'>
+       
+    </div>
+    </>
     </>
   )
 }

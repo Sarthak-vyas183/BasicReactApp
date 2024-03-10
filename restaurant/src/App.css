@@ -1,38 +1,46 @@
  body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
  }
-
+html {
+  background-image: url(../public/img2.avif);
+  background-size: cover;
+}
 .main {
-  position: sticky;
-  margin-top: 10vh;
-  width: 100vw;
-  height: 90vh;
- background-image: url(../public/restorent.jpg);
+ width: 100vw;
+  height: 100vh;
+ background-color: transparent;
  
 }
 .titleVdo { 
   position: absolute;
   right: 50px;
-  top: 100px;
+  top: 220px;
   background-color: transparent;
   width: 500px;
-  height: 300px;
+  height: 280px;
   border: 2px solid gold;
   border-radius: 10px;
+ 
 }
 
 
 nav{
-  position: fixed;
+  position:fixed;
   top: 0;
   display: flex;
   width: 100vw;
   height: 10vh;
-  background-color: black;
+  background-color:transparent;
   color: white;
   z-index: 10;
+  border-bottom: 0.1px solid white;
+  box-shadow: 1px 1px rgb(0, 0, 0);
+  ;
+  border-bottom: 2px solid black;
 }
 .Left {
   display: flex;
@@ -86,21 +94,21 @@ nav img {
 
 .content {
  position: relative;
- top: 20vh;
+ top: 35vh;
  left: 10vw;
 }
 
 /* footer css - :  */
 
 .footer {
-  width: 100vw;
+ width: 100vw;
   height: 70vh;
   
  
 } 
-.dish-content {
+#content {
   margin-top:10vh ;
-  background-color: green;
+  
 }
 
 
@@ -112,9 +120,9 @@ nav img {
   padding-left: 50px;
   width: 100%;
   height: 20%;
-  background-color: rgb(27, 29, 29);
+  background-color:#f8f8f8;
   font-size: large;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -123,48 +131,57 @@ nav img {
   justify-content: space-evenly;
   width: 100%;
   height:65%;
-  background-color: rgb(15, 15, 15);
-  color: white;
+  background-color: #f8f8f8;
+  color: rgb(0, 0, 0);
 }
 .container div {
   display: flex;
   flex-direction: column;
    width: 250px;
    height: 320px;
-   /* background-color: aqua; */
+  
    
 } 
 .container div h3 {
- margin: 0;
+margin: 0;
 }
-.container div ul li {
+.container div p {
   display: flex;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-left: 0;
+  margin-top: 1px;
 }
-.container div ul {
-  margin-top: 0;
-  margin-left: 0;
-}
+
  .social-link  a i {
-     color: rgb(255, 255, 255);
-     margin-left: 10px;
+     color: rgb(0, 0, 0);
+     margin-top: 20px;
+     margin-right: 30px;
  }
  .social-link {
   display: flex;
   
  } 
  .policy {
-  
+ 
   width: 100%;
   height: 15%;
-  background-color: rgb(15, 15, 15);
-  color: white;
+  background-color: #f8f8f8;
+  color: rgb(0, 0, 0);
   padding: 10px;
  }
  .policy p {
   margin: 0;
   font-size: 15px;
  }
+ .line {
+  width: 50vw;
+  height: 0.5px;
+  background-color: black;
+ }
 
+ /* Dish content css  */
+ 
+ .dish-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+ }
+ 

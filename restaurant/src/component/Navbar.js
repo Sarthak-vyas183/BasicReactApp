@@ -1,20 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React , {useState} from 'react'
+import { Link, useLocation } from 'react-router-dom';
 function Navbar() {
+    const [backgroundColor, setBackgroundColor] = useState('transparent');
+    const [ Color, setColor] = useState('white');
+   
+ 
+    const location = useLocation();
+
+    React.useEffect(()=>{
+        if(location.pathname === '/Dish') {
+            setBackgroundColor('rgb(255, 255, 255)'); 
+            setColor('black');
+        } else {
+            setBackgroundColor('transparent');
+            setColor('white');
+        }
+    },[location])
+ 
+
+
   return (
    <>
-    <nav>
+    <nav style={{backgroundColor : backgroundColor , color : Color}}>
         <div className='Left'>
-        <img src="/restorent.jpg" alt="loading"/> 
+            
             <h3>Restaurant</h3>
         </div>
         <div className='right'>
-        <ul>
-            <li><Link className='li' to='/Homes'>Home</Link></li>
-            <li><Link className='li' to='/Dish'>Dish</Link></li>
-            <li><Link className='li' to='/About'>About</Link></li>
-            <li><Link className='li' to='/login'>login</Link></li>
-            <li><Link className='li' to='/Cart'>Add-to-Cart</Link></li>
+        <ul> 
+            <li><Link style={{color : Color}} className='li' to='/Homes'>Home</Link></li>
+            <li><Link style={{color : Color}} className='li' to='/Dish'>Menu</Link></li>
+            <li><Link style={{color : Color}} className='li' to='/About'>About</Link></li>
+            <li><Link style={{color : Color}} className='li' to='/Cart'>Cart</Link></li>
+            <li><Link style={{color : Color}} className='li' to='/login'>log-in</Link></li>
+           
            
            
         </ul>    

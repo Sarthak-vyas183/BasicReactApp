@@ -2,9 +2,11 @@ import React from 'react'
 
 function Cart() {
   return (
-   <>
-   cart section
-   </>
+    <>
+    <div className='cart-content' id='content'>
+       
+    </div>
+    </>
   )
 }
 

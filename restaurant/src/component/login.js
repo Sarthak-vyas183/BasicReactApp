@@ -2,9 +2,11 @@ import React from 'react'
 import '../App.css';
 function login() {
   return (
-   <>
-    dish section 
-   </>
+    <>
+    <div id='content'>
+       
+    </div>
+    </>
   )
 }
 

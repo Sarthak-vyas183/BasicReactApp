@@ -3,7 +3,11 @@ import '../App.css';
 function About() {
   return (
     <>
-     About Section
+    <div className='about-content' id='content'>
+         <div className="dish-main">
+          
+         </div>
+    </div>
     </>
   )
 }
