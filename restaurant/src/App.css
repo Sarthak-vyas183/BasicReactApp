@@ -177,12 +177,32 @@ margin: 0;
   background-color: black;
  }
 
+.dish-main li {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(54, 51, 51);
+  border:1px solid white;
+  margin-top: 20px;
+  
+}
+.dish-main li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+}
+.dish-main {
+  margin-top: 90px;
+}
  /* Dish content css  */
  
  .dish-content {
-  width: 100vw;
+  
+  width: 99vw;
   height: 100vh;
-  background-color: green;
+  background-color: white;
  }
 
  .D-container {
