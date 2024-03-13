@@ -8,12 +8,13 @@ function Navbar() {
     const location = useLocation();
 
     React.useEffect(()=>{
-        if(location.pathname === '/Dish') {
-            setBackgroundColor('rgb(255, 255, 255)'); 
-            setColor('black');
-        } else {
+        if(location.pathname === '/Homes') {
             setBackgroundColor('transparent');
             setColor('white');
+           
+        } else {
+            setBackgroundColor('rgb(255, 255, 255)'); 
+            setColor('black');
         }
     },[location])
  

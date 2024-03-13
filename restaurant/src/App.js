@@ -10,8 +10,13 @@ import Singup from './component/singup';
 import Footer from './component/footer';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
+import Lunch from './component/Lunch';
+import LDinner from './component/LDinner';
+import Snacks from './component/Snacks';
+import Dinner from './component/Dinner';
+
 function App() {
-  return (
+  return (   
     <Router>
       <Navbar />
       <Routes>
@@ -22,6 +27,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/singup" element={<Singup />} />
+        
+      <Route path='/Snacks' element={<Snacks/>} />
+      <Route path='/Lunch' element={<Lunch/>} />
+      <Route path='/Dinner' element={<Dinner/>} />
+      <Route path='/LDinner' element={<LDinner/>} />
+    
       </Routes>
       <Footer/>
     </Router>
